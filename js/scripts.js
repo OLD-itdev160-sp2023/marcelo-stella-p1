@@ -18,7 +18,7 @@ function updateCountdownTimer(){
     const endTime = new Date("March 31, 2023 23:59:59").getTime();
     const {totalSecond, days, hours, minutes, seconds} = calculateTimeRemaining(endTime);
     const countdownTimer = document.getElementById("countdown-timer");
-    countdownTimer.innerHTML = `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`;
+    countdownTimer.innerHTML = `OFFER ENDS IN: ${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`;
     if (totalSecond <= 0){
         clearInterval(interval);
         countdownTimer.innerHTML = "Countdown has ended";
